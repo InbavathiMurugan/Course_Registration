@@ -12,14 +12,13 @@ public class AuthController {
         return "login";
     }
 
-    @GetMapping("/register")
+    @GetMapping("/signup")
     public String registerPage() {
         return "register";
     }
 
-    @PostMapping("/register")
+    @PostMapping("/signup")
     public String registerUser() {
-        // TODO: Save user to DB (for now, just redirect to login)
         return "redirect:/login";
     }
 }
