@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1>Welcome to Admin Dashboard</h1>
+    <a th:href="@{/students}">View Students</a> |
+    <a th:href="@{/admin/courses}">Manage Courses</a> |
+    <a th:href="@{/logout}">Logout</a>
+</body>
+</html>
